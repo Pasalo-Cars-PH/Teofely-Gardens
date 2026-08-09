@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teofely Gardens | Garden Wedding & Events Venue Silang, Cavite</title>
+    <meta name="description" content="A serene garden wedding and events venue in Silang, Cavite along Santa Rosa–Tagaytay Road. Perfect for weddings, milestones, reunions, and retreats. Request a quote today.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Teofely Gardens | Wedding & Events Venue Silang, Cavite">
+    <meta property="og:description" content="Where beautiful celebrations begin. A picturesque garden setting in Silang, Cavite for weddings and unforgettable milestones.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teofelygardens.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Fonts: Playfair Display + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            800: '#1e3023',
+                            900: '#142218',
+                            950: '#0d1710',
+                        },
+                        champagne: {
+                            100: '#f9f6f0',
+                            200: '#efe8d8',
+                            300: '#e2d3b7',
+                            400: '#d4bd94',
+                        },
+                        softgold: '#c5a059',
+                        charcoal: '#1a1a1a',
+                        ivory: '#fcfbf7'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Teofely Gardens Wedding & Events Venue",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "J. Humarang Street, Barangay Lumil",
+        "addressLocality": "Silang",
+        "addressRegion": "Cavite",
+        "postalCode": "4118",
+        "addressCountry": "PH"
+      },
+      "telephone": "+639175285455",
+      "email": "teofelygardens@yahoo.com",
+      "url": "https://teofelygardens.com",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "137"
+      }
+    }
+    </script>
+
+    <style>
+        .glass-nav {
+            background: rgba(20, 34, 24, 0.92);
+            backdrop-filter: blur(12px);
+        }
+        .text-glow {
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-ivory text-charcoal font-sans antialiased selection:bg-softgold selection:text-white">
+
+    <!-- ==========================================
+         7. TOP ANNOUNCEMENT BAR
+    =========================================== -->
+    <div class="bg-forest-950 text-champagne-200 text-xs sm:text-sm py-2.5 px-4 text-center font-medium tracking-wider uppercase border-b border-forest-800">
+        ✨ Your Celebration Deserves A Beautiful Setting — Silang, Cavite
+    </div>
+
+    <!-- ==========================================
+         8. NAVIGATION
+    =========================================== -->
+    <nav class="sticky top-0 z-50 glass-nav border-b border-forest-800 text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-champagne-100 uppercase">
+                Teofely Gardens
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="text-champagne-100 hover:text-softgold transition">Home</a>
+                <a href="#weddings" class="text-champagne-100 hover:text-softgold transition">Weddings</a>
+                <a href="#events" class="text-champagne-100 hover:text-softgold transition">Events</a>
+                <a href="#gallery" class="text-champagne-100 hover:text-softgold transition">Gallery</a>
+                <a href="#reviews" class="text-champagne-100 hover:text-softgold transition">Reviews</a>
+                <a href="#location" class="text-champagne-100 hover:text-softgold transition">Location</a>
+            </div>
+
+            <div class="hidden md:flex items-center">
+                <a href="#inquire" class="bg-softgold hover:bg-yellow-600 text-forest-950 font-semibold px-5 py-2.5 rounded-full text-sm transition-all shadow-md hover:shadow-lg">
+                    REQUEST A QUOTE
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-champagne-100 focus:outline-none p-2" aria-label="Toggle Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-forest-900 border-b border-forest-800 px-4 pt-2 pb-6 space-y-3 text-center">
+            <a href="#home" class="block text-champagne-100 hover:text-softgold py-2 text-sm">Home</a>
+            <a href="#weddings" class="block text-champagne-100 hover:text-softgold py-2 text-sm">Weddings</a>
+            <a href="#events" class="block text-champagne-100 hover:text-softgold py-2 text-sm">Events</a>
+            <a href="#gallery" class="block text-champagne-100 hover:text-softgold py-2 text-sm">Gallery</a>
+            <a href="#reviews" class="block text-champagne-100 hover:text-softgold py-2 text-sm">Reviews</a>
+            <a href="#location" class="block text-champagne-100 hover:text-softgold py-2 text-sm">Location</a>
+            <a href="#inquire" class="inline-block bg-softgold text-forest-950 font-semibold px-6 py-2.5 rounded-full text-sm w-full mt-2">
+                REQUEST A QUOTE
+            </a>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         9. HERO SECTION
+    =========================================== -->
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-forest-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=1920" alt="Teofely Gardens Outdoor Wedding Setup" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-900/60 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 py-20">
+            <p class="text-softgold font-semibold tracking-widest text-xs sm:text-sm uppercase mb-4">
+                Garden Events • Weddings • Celebrations • Silang, Cavite
+            </p>
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-champagne-100 mb-6 leading-tight text-glow">
+                Where Beautiful Celebrations Begin.
+            </h1>
+            <p class="text-lg sm:text-xl text-champagne-200 font-light mb-10 max-w-2xl mx-auto leading-relaxed">
+                A serene garden setting in Silang, Cavite for weddings, milestones, family gatherings, and unforgettable celebrations along Santa Rosa–Tagaytay Road.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#inquire" class="w-full sm:w-auto bg-softgold hover:bg-yellow-600 text-forest-950 font-bold px-8 py-4 rounded-full text-base transition-all transform hover:-translate-y-0.5 shadow-xl">
+                    REQUEST A QUOTE
+                </a>
+                <a href="#gallery" class="w-full sm:w-auto border border-champagne-300 text-champagne-100 hover:bg-white/10 font-medium px-8 py-4 rounded-full text-base transition-all">
+                    VIEW THE VENUE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         10. QUICK TRUST / BENEFIT STRIP
+    =========================================== -->
+    <section class="bg-forest-800 text-champagne-100 border-y border-forest-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-2">
+                <div class="text-2xl mb-1">🌿</div>
+                <h2 class="font-serif font-bold text-base text-champagne-200">Garden Setting</h2>
+                <p class="text-xs text-champagne-300 mt-1">Beautiful green spaces for celebrations</p>
+            </div>
+            <div class="p-2">
+                <div class="text-2xl mb-1">💍</div>
+                <h2 class="font-serif font-bold text-base text-champagne-200">Wedding Ready</h2>
+                <p class="text-xs text-champagne-300 mt-1">Designed around meaningful moments</p>
+            </div>
+            <div class="p-2">
+                <div class="text-2xl mb-1">🏡</div>
+                <h2 class="font-serif font-bold text-base text-champagne-200">Stay & Celebrate</h2>
+                <p class="text-xs text-champagne-300 mt-1">Accommodation options available</p>
+            </div>
+            <div class="p-2">
+                <div class="text-2xl mb-1">📍</div>
+                <h2 class="font-serif font-bold text-base text-champagne-200">Silang Location</h2>
+                <p class="text-xs text-champagne-300 mt-1">Santa Rosa–Tagaytay Road corridor</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         11. VENUE EXPERIENCE
+    =========================================== -->
+    <section class="py-20 bg-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1545232979-fbf34f5ce722?auto=format&fit=crop&q=80&w=800" alt="Teofely Gardens Greenery" class="rounded-2xl shadow-2xl w-full object-cover h-[450px]">
+                    <div class="absolute -bottom-6 -right-6 bg-forest-900 text-champagne-200 p-6 rounded-xl hidden sm:block max-w-xs border border-forest-800 shadow-xl">
+                        <p class="font-serif text-sm italic">"A natural escape designed for peaceful gatherings and elegant affairs."</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <span class="text-softgold uppercase tracking-widest text-xs font-semibold">The Venue Experience</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950 leading-tight">
+                        More Than a Venue.
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-base sm:text-lg">
+                        Teofely Gardens brings together beautiful outdoor spaces, event facilities, and accommodation options for celebrations that feel like more than just a few hours at a venue.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Nestled along J. Humarang Street in Barangay Lumil, Silang, Cavite, guests enjoy the lush air and refreshing atmosphere near Tagaytay while keeping logistics accessible for guests coming from Metro Manila and Cavite.
+                    </p>
+                    <div class="pt-4">
+                        <a href="#inquire" class="inline-flex items-center text-forest-900 font-semibold hover:text-softgold transition">
+                            Inquire about event availability <span class="ml-2">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         12. EVENT TYPES
+    =========================================== -->
+    <section id="events" class="py-20 bg-champagne-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Tailored Gatherings</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950 mt-2">Celebrations We Host</h2>
+                <p class="text-gray-600 mt-3 text-sm">Flexible spaces tailored for intimate gatherings and grand milestones.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=500" alt="Weddings at Teofely" class="h-48 w-full object-cover">
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-xl text-forest-950 mb-2">Weddings</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-4">Garden ceremonies and receptions under the open sky or structured pavilions.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#inquire" class="text-xs font-bold text-forest-900 hover:text-softgold transition tracking-wider uppercase">PLAN THIS EVENT →</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80&w=500" alt="Birthdays & Debuts" class="h-48 w-full object-cover">
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-xl text-forest-950 mb-2">Debuts & Birthdays</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-4">Memorable milestone birthday celebrations and elegant debut parties.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#inquire" class="text-xs font-bold text-forest-900 hover:text-softgold transition tracking-wider uppercase">PLAN THIS EVENT →</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=500" alt="Family Gatherings" class="h-48 w-full object-cover">
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-xl text-forest-950 mb-2">Reunions & Gatherings</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-4">Anniversaries, vow renewals, christenings, and cherished family reunions.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#inquire" class="text-xs font-bold text-forest-900 hover:text-softgold transition tracking-wider uppercase">PLAN THIS EVENT →</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=500" alt="Corporate & Retreats" class="h-48 w-full object-cover">
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-xl text-forest-950 mb-2">Corporate & Retreats</h3>
+                            <p class="text-gray-600 text-xs leading-relaxed mb-4">Seminars, corporate team-building events, and quiet organizational retreats.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="#inquire" class="text-xs font-bold text-forest-900 hover:text-softgold transition tracking-wider uppercase">PLAN THIS EVENT →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         13. WEDDING SECTION
+    =========================================== -->
+    <section id="weddings" class="py-20 bg-forest-900 text-champagne-100 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Destination Weddings</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight text-champagne-100">
+                        Make Your Wedding Feel Like a Celebration.
+                    </h2>
+                    <p class="text-champagne-200 text-base leading-relaxed font-light">
+                        A garden setting, flexible event spaces, and accommodation designed to bring important people together without feeling rushed.
+                    </p>
+                    <ul class="space-y-3 text-sm text-champagne-300 pt-2">
+                        <li class="flex items-center"><span class="text-softgold mr-3">✦</span> Outdoor garden ceremonies surrounded by nature</li>
+                        <li class="flex items-center"><span class="text-softgold mr-3">✦</span> Reception spaces designed for dining and dancing</li>
+                        <li class="flex items-center"><span class="text-softgold mr-3">✦</span> On-site accommodation for pre-wedding preparation</li>
+                    </ul>
+                    <div class="pt-6">
+                        <a href="#inquire" class="bg-softgold hover:bg-yellow-600 text-forest-950 font-bold px-8 py-3.5 rounded-full text-sm inline-block transition">
+                            START PLANNING YOUR WEDDING
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=600" alt="Wedding Couple" class="rounded-xl object-cover h-64 sm:h-80 w-full shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=600" alt="Wedding Garden Venue" class="rounded-xl object-cover h-64 sm:h-80 w-full shadow-lg mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         14. VENUE GALLERY
+    =========================================== -->
+    <section id="gallery" class="py-20 bg-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Visual Tour</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950 mt-2">The Venue Gallery</h2>
+                <p class="text-gray-600 mt-2 text-sm">Explore the garden grounds, event areas, and atmosphere at Teofely Gardens.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="overflow-hidden rounded-lg shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600" alt="Garden Area" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1545232979-fbf34f5ce722?auto=format&fit=crop&q=80&w=600" alt="Lush Grounds" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=600" alt="Evening Lighting" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=600" alt="Wedding Details" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&q=80&w=600" alt="Reception Setup" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=600" alt="Accommodation & Grounds" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         15. WHY TEOFELY
+    =========================================== -->
+    <section class="py-20 bg-champagne-100 border-y border-champagne-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Venue Features</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950 mt-2">Everything You Need for a Meaningful Celebration</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-ivory p-8 rounded-xl border border-champagne-200">
+                    <div class="w-12 h-12 bg-forest-900 text-softgold rounded-full flex items-center justify-center text-xl mb-6">🌿</div>
+                    <h3 class="font-serif font-bold text-xl text-forest-950 mb-3">Garden Event Spaces</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Spacious outdoors surrounded by flora, offering a scenic floral canvas for ceremonies and receptions.</p>
+                </div>
+                <div class="bg-ivory p-8 rounded-xl border border-champagne-200">
+                    <div class="w-12 h-12 bg-forest-900 text-softgold rounded-full flex items-center justify-center text-xl mb-6">🏡</div>
+                    <h3 class="font-serif font-bold text-xl text-forest-950 mb-3">On-Site Accommodation</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Stay options available for couples and families, making event preparations seamless and relaxed.</p>
+                </div>
+                <div class="bg-ivory p-8 rounded-xl border border-champagne-200">
+                    <div class="w-12 h-12 bg-forest-900 text-softgold rounded-full flex items-center justify-center text-xl mb-6">📍</div>
+                    <h3 class="font-serif font-bold text-xl text-forest-950 mb-3">Accessible Location</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Located conveniently in Silang, Cavite, easily reachable from Tagaytay and Santa Rosa exit corridors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         16. STAY & CELEBRATE
+    =========================================== -->
+    <section class="py-20 bg-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 space-y-6">
+                    <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Accommodation</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950 leading-tight">
+                        Stay Longer. Celebrate Together.
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-base">
+                        Make your event more than a single-day gathering with accommodation options for couples, families, and guests. Relax before the event and rest right after without the rush of driving back immediately.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#inquire" class="bg-forest-900 hover:bg-forest-800 text-champagne-100 font-semibold px-6 py-3 rounded-full text-sm inline-block transition">
+                            EXPLORE STAY OPTIONS
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800" alt="Stay and Accommodation" class="rounded-2xl shadow-xl w-full object-cover h-[380px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         17. FOOD / EVENT EXPERIENCE
+    =========================================== -->
+    <section class="py-16 bg-forest-950 text-champagne-100 border-t border-forest-800">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+            <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Catering & Setup</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-champagne-100">Ask About Catering & Event Options</h2>
+            <p class="text-champagne-300 max-w-2xl mx-auto text-sm leading-relaxed">
+                We work closely with preferred partners and guests to coordinate event arrangements. Inquire today to get full details on catering and partner options.
+            </p>
+            <div class="pt-4">
+                <a href="#inquire" class="bg-softgold hover:bg-yellow-600 text-forest-950 font-bold px-8 py-3.5 rounded-full text-sm inline-block transition">
+                    INQUIRE ABOUT YOUR EVENT
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         18 & 19. SOCIAL PROOF & SUMMARY
+    =========================================== -->
+    <section id="reviews" class="py-20 bg-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Verified Feedback</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950 mt-2">Trusted by Couples & Families</h2>
+                <div class="flex items-center justify-center space-x-2 mt-4">
+                    <span class="text-xl font-bold text-forest-950">4.5</span>
+                    <div class="text-yellow-500 text-lg">★★★★★</div>
+                    <span class="text-sm text-gray-500">(137 Verified Reviews)</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Placeholder Cards as requested -->
+                <div class="bg-champagne-100/60 p-6 rounded-xl border border-champagne-200">
+                    <div class="text-yellow-500 mb-3">★★★★★</div>
+                    <p class="text-gray-700 text-sm italic mb-4">[INSERT VERIFIED GOOGLE REVIEW]</p>
+                    <p class="text-xs font-bold text-forest-950">— Verified Guest / Client</p>
+                </div>
+                <div class="bg-champagne-100/60 p-6 rounded-xl border border-champagne-200">
+                    <div class="text-yellow-500 mb-3">★★★★★</div>
+                    <p class="text-gray-700 text-sm italic mb-4">[INSERT VERIFIED GOOGLE REVIEW]</p>
+                    <p class="text-xs font-bold text-forest-950">— Verified Wedding Client</p>
+                </div>
+                <div class="bg-champagne-100/60 p-6 rounded-xl border border-champagne-200">
+                    <div class="text-yellow-500 mb-3">★★★★★</div>
+                    <p class="text-gray-700 text-sm italic mb-4">[INSERT VERIFIED GOOGLE REVIEW]</p>
+                    <p class="text-xs font-bold text-forest-950">— Verified Event Client</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="https://teofelygardens.com" target="_blank" rel="noopener" class="text-xs font-bold text-forest-900 hover:text-softgold uppercase tracking-widest border-b border-forest-900 pb-1">
+                    SEE MORE REVIEWS ON GOOGLE →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         22. HOW IT WORKS
+    =========================================== -->
+    <section class="py-16 bg-forest-900 text-champagne-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Simple Process</span>
+                <h2 class="font-serif text-3xl font-bold text-champagne-100 mt-1">How It Works</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="space-y-3 p-4">
+                    <div class="w-10 h-10 bg-softgold text-forest-950 font-bold rounded-full flex items-center justify-center mx-auto text-lg">1</div>
+                    <h3 class="font-serif font-bold text-lg text-champagne-200">Tell Us About Your Event</h3>
+                    <p class="text-xs text-champagne-300 leading-relaxed">Fill out the quick quote request form below with your preferred date and event type.</p>
+                </div>
+                <div class="space-y-3 p-4">
+                    <div class="w-10 h-10 bg-softgold text-forest-950 font-bold rounded-full flex items-center justify-center mx-auto text-lg">2</div>
+                    <h3 class="font-serif font-bold text-lg text-champagne-200">Discuss Your Options</h3>
+                    <p class="text-xs text-champagne-300 leading-relaxed">Our team will get in touch to confirm availability, answer questions, and provide details.</p>
+                </div>
+                <div class="space-y-3 p-4">
+                    <div class="w-10 h-10 bg-softgold text-forest-950 font-bold rounded-full flex items-center justify-center mx-auto text-lg">3</div>
+                    <h3 class="font-serif font-bold text-lg text-champagne-200">Plan Your Celebration</h3>
+                    <p class="text-xs text-champagne-300 leading-relaxed">Schedule an ocular visit and reserve your date at Teofely Gardens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         20 & 21. QUALIFIED INQUIRY SECTION & FORM
+    =========================================== -->
+    <section id="inquire" class="py-20 bg-champagne-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-ivory rounded-2xl shadow-xl border border-champagne-200 p-8 sm:p-12">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Start Planning</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950 mt-1">Let's Start Planning Your Celebration</h2>
+                    <p class="text-gray-600 text-sm mt-3">Tell us a little about your event and we'll help you take the next step.</p>
+                </div>
+
+                <!-- FORM SUCCESS STATE CONTAINER (UI ONLY DEMO) -->
+                <div id="form-success-msg" class="hidden bg-forest-900 text-champagne-100 p-8 rounded-xl text-center space-y-4 my-6">
+                    <div class="text-3xl">✨</div>
+                    <h3 class="font-serif text-2xl font-bold text-champagne-100">Thank You — We've Received Your Inquiry.</h3>
+                    <p class="text-champagne-200 text-sm max-w-md mx-auto">Your event details have been received. We'll coordinate the next step with you shortly.</p>
+                    <p class="text-xs text-champagne-400 italic pt-2">(UI Demo: Connect real backend / Email / Sheets endpoint here)</p>
+                </div>
+
+                <form id="inquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-forest-950 uppercase tracking-wider mb-2">Your Name *</label>
+                            <input type="text" required placeholder="Full Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-forest-800 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-forest-950 uppercase tracking-wider mb-2">Mobile Number *</label>
+                            <input type="tel" required placeholder="09XX XXX XXXX" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-forest-800 text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-forest-950 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" placeholder="email@domain.com" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-forest-800 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-forest-950 uppercase tracking-wider mb-2">Event Type *</label>
+                            <select required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-forest-800 text-sm bg-white">
+                                <option value="">Select Event Type</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Birthday/Debut">Birthday / Debut</option>
+                                <option value="Reunion/Gathering">Reunion / Family Gathering</option>
+                                <option value="Corporate/Retreat">Corporate / Retreat</option>
+                                <option value="Other">Other Celebration</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-forest-950 uppercase tracking-wider mb-2">Preferred Event Date</label>
+                            <input type="date" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-forest-800 text-sm bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-forest-950 uppercase tracking-wider mb-2">Estimated Guest Count</label>
+                            <input type="text" placeholder="e.g. 100-150 guests" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-forest-800 text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-forest-950 uppercase tracking-wider mb-2">Message / Additional Details</label>
+                        <textarea rows="4" placeholder="Tell us about your vision, preferred schedule, or questions..." class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-forest-800 text-sm"></textarea>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <button type="submit" class="w-full sm:w-1/2 bg-softgold hover:bg-yellow-600 text-forest-950 font-bold py-4 rounded-xl text-sm transition shadow-md">
+                            REQUEST A QUOTE
+                        </button>
+                        <a href="#inquire" onclick="alert('Please submit form specifying your preferred ocular visit date in the message area.')" class="w-full sm:w-1/2 text-center border border-forest-900 text-forest-900 font-semibold py-4 rounded-xl text-sm hover:bg-forest-900 hover:text-white transition">
+                            SCHEDULE AN OCULAR
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         23. LOCATION
+    =========================================== -->
+    <section id="location" class="py-20 bg-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Location & Address</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-950">Find Us in Silang</h2>
+                    <div class="text-gray-700 text-sm space-y-2 leading-relaxed">
+                        <p class="font-bold text-base text-forest-900">Teofely Gardens Wedding & Events Venue</p>
+                        <p>J. Humarang Street, Barangay Lumil</p>
+                        <p>Silang, Cavite 4118, Philippines</p>
+                        <p class="text-xs text-gray-500 pt-1">Located along Santa Rosa–Tagaytay Road corridor.</p>
+                    </div>
+
+                    <div class="pt-2 text-sm text-gray-700 space-y-1">
+                        <p><span class="font-semibold">Phone:</span> 0917 528 5455</p>
+                        <p><span class="font-semibold">Email:</span> teofelygardens@yahoo.com</p>
+                    </div>
+
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <a href="https://maps.google.com/?q=Teofely+Gardens+Silang+Cavite" target="_blank" rel="noopener" class="bg-forest-900 text-champagne-100 px-6 py-3 rounded-full text-xs font-bold tracking-wider uppercase hover:bg-forest-800 transition">
+                            GET DIRECTIONS →
+                        </a>
+                        <a href="tel:09175285455" class="border border-forest-900 text-forest-900 px-6 py-3 rounded-full text-xs font-bold tracking-wider uppercase hover:bg-forest-900 hover:text-white transition">
+                            CALL US NOW
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embedded Visual Placeholder -->
+                <div class="bg-gray-200 rounded-2xl h-80 overflow-hidden relative shadow-md flex items-center justify-center border border-gray-300">
+                    <div class="text-center p-6">
+                        <div class="text-3xl mb-2">📍</div>
+                        <p class="font-bold text-forest-950 text-sm">Google Maps Component Location</p>
+                        <p class="text-xs text-gray-600 mt-1">J. Humarang St., Brgy. Lumil, Silang, Cavite</p>
+                        <a href="https://maps.google.com/?q=Teofely+Gardens+Silang+Cavite" target="_blank" rel="noopener" class="inline-block mt-4 text-xs bg-white text-forest-950 px-4 py-2 rounded shadow font-semibold">
+                            Open Interactive Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         24. FAQ SECTION
+    =========================================== -->
+    <section class="py-20 bg-champagne-100 border-t border-champagne-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-softgold uppercase tracking-widest text-xs font-semibold">Questions</span>
+                <h2 class="font-serif text-3xl font-bold text-forest-950 mt-1">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-ivory p-6 rounded-xl border border-champagne-200">
+                    <h3 class="font-serif font-bold text-forest-950 text-base mb-2">What types of events can be held at Teofely Gardens?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Teofely Gardens hosts weddings, debuts, birthdays, anniversaries, vow renewals, christenings, reunions, corporate seminars, and retreats.</p>
+                </div>
+                <div class="bg-ivory p-6 rounded-xl border border-champagne-200">
+                    <h3 class="font-serif font-bold text-forest-950 text-base mb-2">How do I inquire about a wedding or event date?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Please submit our online "Request a Quote" form above or contact Teofely Gardens directly for current availability, package details, and inclusions.</p>
+                </div>
+                <div class="bg-ivory p-6 rounded-xl border border-champagne-200">
+                    <h3 class="font-serif font-bold text-forest-950 text-base mb-2">Can I schedule an ocular visit of the grounds?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Yes! You can request an ocular visit by filling out the inquiry form or reaching out to us via phone or email.</p>
+                </div>
+                <div class="bg-ivory p-6 rounded-xl border border-champagne-200">
+                    <h3 class="font-serif font-bold text-forest-950 text-base mb-2">Do you offer accommodation on-site?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Yes, accommodation options are available. Please contact Teofely Gardens for room capacity and booking details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         25. FINAL CUSTOMER CTA
+    =========================================== -->
+    <section class="py-20 bg-forest-950 text-champagne-100 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-champagne-100">Your Celebration Starts Here.</h2>
+            <p class="text-champagne-200 text-base max-w-xl mx-auto font-light">Tell us what you're planning and let's explore what Teofely Gardens can offer for your upcoming event.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                <a href="#inquire" class="bg-softgold hover:bg-yellow-600 text-forest-950 font-bold px-8 py-4 rounded-full text-sm transition">
+                    REQUEST A QUOTE
+                </a>
+                <a href="#inquire" class="border border-champagne-300 text-champagne-100 hover:bg-white/10 font-semibold px-8 py-4 rounded-full text-sm transition">
+                    SCHEDULE AN OCULAR
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Public Footer -->
+    <footer class="bg-forest-950 text-champagne-400 text-xs py-8 border-t border-forest-900">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p>© Teofely Gardens Wedding & Events Venue. Silang, Cavite, Philippines.</p>
+            <p>J. Humarang Street, Barangay Lumil, Silang, Cavite 4118 | 0917 528 5455</p>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA BAR -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-forest-950/95 border-t border-forest-800 p-3 z-40 flex items-center justify-between gap-2 backdrop-blur">
+        <a href="#inquire" class="w-full bg-softgold text-forest-950 font-bold py-3 text-center rounded-lg text-xs uppercase tracking-wider">
+            REQUEST A QUOTE
+        </a>
+    </div>
+
+    <!-- Script for mobile menu & form -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('inquiry-form').classList.add('hidden');
+            document.getElementById('form-success-msg').classList.remove('hidden');
+        }
+    </script>
+
+
+
+
+    <!-- =================================================================
+         =================================================================
+         26. PRIVATE CLIENT PROPOSAL (STRONGLY DIVIDED)
+         =================================================================
+         ================================================================= -->
+
+    <div class="my-32 border-t-8 border-dashed border-softgold relative">
+        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-softgold text-forest-950 font-bold px-8 py-2 rounded-full uppercase tracking-widest text-xs shadow-lg">
+            PRIVATE CLIENT PROPOSAL — BELOW THIS LINE
+        </div>
+    </div>
+
+    <section class="bg-gray-900 text-white py-20 px-4 sm:px-6 lg:px-8 font-sans">
+        <div class="max-w-5xl mx-auto space-y-16">
+
+            <!-- Proposal Header -->
+            <div class="text-center space-y-4 border-b border-gray-800 pb-12">
+                <span class="text-softgold uppercase tracking-widest text-xs font-bold">CONFIDENTIAL PROPOSAL</span>
+                <h1 class="text-3xl sm:text-5xl font-serif font-bold text-white">PRIVATE CLIENT PROPOSAL</h1>
+                <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto">Prepared specifically for the Owners & Management of <span class="text-white font-semibold">Teofely Gardens Wedding & Events Venue</span></p>
+            </div>
+
+            <!-- 27. CLIENT PROBLEM / OPPORTUNITY -->
+            <div class="space-y-6">
+                <span class="text-softgold text-xs uppercase tracking-widest font-bold">01. The Opportunity</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white">What If More Couples Found Teofely Gardens Before They Booked Another Venue?</h2>
+                <div class="text-gray-300 text-sm leading-relaxed space-y-4">
+                    <p>Potential clients routinely discover wedding and event venues through Facebook, Instagram, Google searches, and referrals. However, social media posts and standard pages often lose interest before a visitor takes action.</p>
+                    <p>The challenge isn't just generating views — it's turning attention into structured inquiries, ocular visits, quote requests, and confirmed bookings.</p>
+                    <p class="text-white font-semibold">The Solution: A high-converting digital acquisition funnel tailored specifically for Teofely Gardens.</p>
+                </div>
+            </div>
+
+            <!-- 28. FUNNEL SYSTEM DIAGRAM -->
+            <div class="space-y-6">
+                <span class="text-softgold text-xs uppercase tracking-widest font-bold">02. Conversion Strategy</span>
+                <h2 class="text-2xl font-serif font-bold text-white">The Customer Acquisition Architecture</h2>
+                
+                <div class="bg-gray-800/80 p-8 rounded-2xl border border-gray-700 text-center">
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-xs font-bold text-softgold mb-6">
+                        <div class="bg-gray-900 p-2 rounded">FACEBOOK</div>
+                        <div class="bg-gray-900 p-2 rounded">INSTAGRAM</div>
+                        <div class="bg-gray-900 p-2 rounded">GOOGLE</div>
+                        <div class="bg-gray-900 p-2 rounded">REFERRALS</div>
+                        <div class="bg-gray-900 p-2 rounded col-span-2 sm:col-span-1">QR CODES</div>
+                    </div>
+                    <div class="text-gray-400 text-xl mb-4">↓</div>
+                    <div class="bg-forest-900 text-champagne-100 p-4 rounded-xl border border-forest-800 font-bold text-sm mb-4">
+                        PREMIUM CONVERSION FUNNEL (Teofely Gardens Landing Page)
+                    </div>
+                    <div class="text-gray-400 text-xl mb-4">↓</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-medium text-gray-300">
+                        <div class="bg-gray-900 p-3 rounded-lg border border-gray-700">QUALIFIED LEAD CAPTURE</div>
+                        <div class="bg-gray-900 p-3 rounded-lg border border-gray-700">OCULAR VISIT SCHEDULED</div>
+                        <div class="bg-gray-900 p-3 rounded-lg border border-gray-700">VENUE BOOKING</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 29. WHAT WE ARE BUILDING -->
+            <div class="space-y-6">
+                <span class="text-softgold text-xs uppercase tracking-widest font-bold">03. Deliverables</span>
+                <h2 class="text-2xl font-serif font-bold text-white">What We Are Building For You</h2>
+                <div class="grid sm:grid-cols-2 gap-4 text-sm text-gray-300">
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">✓ Premium Conversion Landing Page</div>
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">✓ Optimized Mobile-First Experience</div>
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">✓ Qualified Lead Capture Form</div>
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">✓ Wedding & Event Showcases</div>
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">✓ Venue Gallery Integration</div>
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">✓ Social Proof & Reviews Display</div>
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">✓ Location & Map Direction Guidance</div>
+                    <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">✓ Analytics & Future CRM Ready</div>
+                </div>
+            </div>
+
+            <!-- 30. BUSINESS VALUE PILLARS -->
+            <div class="space-y-6">
+                <span class="text-softgold text-xs uppercase tracking-widest font-bold">04. Four Pillars</span>
+                <h2 class="text-2xl font-serif font-bold text-white">More Than A Website: A Revenue System</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                    <div class="bg-gray-800 p-5 rounded-xl border border-gray-700">
+                        <div class="text-softgold font-bold text-sm mb-1">1. ATTRACT</div>
+                        <p class="text-gray-400 leading-relaxed">Turn traffic from ads, social search, and recommendations into intentional visitors.</p>
+                    </div>
+                    <div class="bg-gray-800 p-5 rounded-xl border border-gray-700">
+                        <div class="text-softgold font-bold text-sm mb-1">2. CONVERT</div>
+                        <p class="text-gray-400 leading-relaxed">Guide prospective clients toward a simple, appealing action: Requesting a quote.</p>
+                    </div>
+                    <div class="bg-gray-800 p-5 rounded-xl border border-gray-700">
+                        <div class="text-softgold font-bold text-sm mb-1">3. CAPTURE</div>
+                        <p class="text-gray-400 leading-relaxed">Gather key information (date, guest count, event type) to prepare proper proposals.</p>
+                    </div>
+                    <div class="bg-gray-800 p-5 rounded-xl border border-gray-700">
+                        <div class="text-softgold font-bold text-sm mb-1">4. FOLLOW UP</div>
+                        <p class="text-gray-400 leading-relaxed">Build an organized lead list ready for follow-ups, ocular scheduling, and booking conversion.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 31, 32, 33. LAUNCH PACKAGE & VALUE STACK -->
+            <div class="bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-softgold p-8 sm:p-10 rounded-2xl space-y-8">
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 border-b border-gray-700 pb-6">
+                    <div>
+                        <span class="bg-softgold text-forest-950 font-bold text-xs px-3 py-1 rounded-full uppercase">Exclusive Proposal</span>
+                        <h3 class="text-2xl font-serif font-bold text-white mt-2">TEOFELY GARDENS LAUNCH FUNNEL</h3>
+                    </div>
+                    <div class="text-left sm:text-right">
+                        <p class="text-xs text-gray-400 line-through">Standard Value: ₱25,000</p>
+                        <p class="text-3xl font-bold text-softgold">₱12,000 <span class="text-xs font-normal text-gray-300">ONE-TIME</span></p>
+                    </div>
+                </div>
+
+                <div class="space-y-3 text-xs text-gray-300">
+                    <p class="font-bold text-white text-sm mb-2">Package Deliverables:</p>
+                    <div class="grid sm:grid-cols-2 gap-2">
+                        <p>✓ High-converting landing page implementation</p>
+                        <p>✓ Custom typography & luxury aesthetic styling</p>
+                        <p>✓ Qualified lead collection flow setup</p>
+                        <p>✓ Mobile optimization & sticky CTA setup</p>
+                        <p>✓ Verified review & social proof framework</p>
+                        <p>✓ Location & Google Maps layout integration</p>
+                        <p>✓ Launch QA and setup support</p>
+                        <p>✓ [OPTIONAL INTEGRATION] CRM / Email notification sync</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 34. RISK REVERSAL -->
+            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 space-y-2">
+                <h4 class="font-bold text-white text-sm">7-Day Performance Commitment</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    If the agreed campaign setup does not generate the defined target of qualified inquiries within the agreed trial period, we will review the funnel performance, identify friction points, and perform agreed optimization adjustments.
+                </p>
+            </div>
+
+            <!-- 35. IMPLEMENTATION TIMELINE -->
+            <div class="space-y-6">
+                <span class="text-softgold text-xs uppercase tracking-widest font-bold">05. Process</span>
+                <h2 class="text-2xl font-serif font-bold text-white">Implementation Timeline</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 text-center text-xs">
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700">
+                        <div class="text-softgold font-bold">1. APPROVE</div>
+                        <div class="text-gray-400 text-[10px] mt-1">Confirm agreement</div>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700">
+                        <div class="text-softgold font-bold">2. CONTENT</div>
+                        <div class="text-gray-400 text-[10px] mt-1">Collect assets</div>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700">
+                        <div class="text-softgold font-bold">3. BUILD</div>
+                        <div class="text-gray-400 text-[10px] mt-1">Finalize funnel</div>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700">
+                        <div class="text-softgold font-bold">4. TEST</div>
+                        <div class="text-gray-400 text-[10px] mt-1">Mobile & CRO QA</div>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700 col-span-2 sm:col-span-1">
+                        <div class="text-softgold font-bold">5. LAUNCH</div>
+                        <div class="text-gray-400 text-[10px] mt-1">Go Live</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 36 & 37. FINAL PITCH & APPROVAL FORM -->
+            <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 space-y-6">
+                <div class="text-center space-y-2">
+                    <h2 class="text-2xl font-serif font-bold text-white">Ready to Turn More Online Attention Into Event Inquiries?</h2>
+                    <p class="text-xs text-gray-400 max-w-lg mx-auto">Let's turn Teofely Gardens' venue experience, visual appeal, and event offering into an optimized customer acquisition channel.</p>
+                </div>
+
+                <div id="proposal-success" class="hidden bg-forest-900 text-champagne-100 p-6 rounded-xl text-center space-y-2">
+                    <h3 class="font-bold text-lg">You're In!</h3>
+                    <p class="text-xs text-champagne-200">Thank you. We'll coordinate the final content, assets, and launch details with management shortly.</p>
+                </div>
+
+                <form id="approval-form" onsubmit="handleApprovalSubmit(event)" class="space-y-4 max-w-xl mx-auto pt-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Owner / Manager Name *</label>
+                            <input type="text" required placeholder="Name" class="w-full px-3 py-2.5 rounded bg-gray-900 border border-gray-700 text-white text-xs">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Mobile / Viber Number *</label>
+                            <input type="tel" required placeholder="09XX XXX XXXX" class="w-full px-3 py-2.5 rounded bg-gray-900 border border-gray-700 text-white text-xs">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Target Launch Date</label>
+                        <input type="date" class="w-full px-3 py-2.5 rounded bg-gray-900 border border-gray-700 text-white text-xs">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Message / Notes</label>
+                        <textarea rows="2" placeholder="Any specific questions or custom requirements..." class="w-full px-3 py-2.5 rounded bg-gray-900 border border-gray-700 text-white text-xs"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-softgold hover:bg-yellow-600 text-forest-950 font-bold py-3.5 rounded-lg text-xs uppercase tracking-wider transition">
+                        APPROVE & START (₱12,000)
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function handleApprovalSubmit(e) {
+            e.preventDefault();
+            document.getElementById('approval-form').classList.add('hidden');
+            document.getElementById('proposal-success').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
