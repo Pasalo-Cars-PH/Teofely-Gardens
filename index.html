@@ -283,44 +283,83 @@
       padding: 5rem 0;
     }
 
+    .reviews-summary {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #fdf8e6;
+      border: 1px solid #f6e05e;
+      padding: 0.5rem 1.25rem;
+      border-radius: 30px;
+      font-weight: 700;
+      color: #744210;
+      font-size: 1.15rem;
+    }
+
+    .star-icon {
+      color: #d4af37;
+    }
+
     .reviews-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      gap: 1.5rem;
     }
 
     .review-card {
       border: 1px solid var(--border-color);
-      padding: 2.5rem 2rem;
+      padding: 2rem;
       border-radius: 8px;
       background: #ffffff;
-      text-align: center;
+      box-shadow: var(--card-shadow);
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      justify-content: space-between;
     }
 
-    .review-placeholder-box {
-      border: 2px dashed var(--border-color);
-      background: var(--bg-light);
-      padding: 2rem 1.5rem;
-      border-radius: 8px;
-      width: 100%;
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
     }
 
-    .review-placeholder-title {
+    .review-author {
       font-weight: 700;
       color: var(--primary-color);
-      margin-bottom: 0.5rem;
-      font-size: 0.95rem;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
+      font-size: 1.05rem;
     }
 
-    .review-placeholder-text {
-      font-size: 0.9rem;
+    .review-source {
+      font-size: 0.8rem;
       color: var(--text-muted);
+      background: var(--bg-light);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+    }
+
+    .review-text {
+      color: var(--text-dark);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+      font-style: italic;
+    }
+
+    .review-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid #f0f0f0;
+      padding-top: 0.75rem;
     }
 
     /* INQUIRY FORM */
@@ -508,6 +547,7 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#accommodation">Accommodation</a></li>
         <li><a href="#catering">Catering</a></li>
+        <li><a href="#reviews">Reviews</a></li>
         <li><a href="#proposal">Proposal</a></li>
       </ul>
       <a href="#inquiry" class="btn btn-primary">Book an Ocular</a>
@@ -595,7 +635,7 @@
         </div>
         <div class="feature-content">
           <h2>Weddings at Teofely Gardens</h2>
-          <p>Bring your wedding vision to reality. Our pavilion offers flexible seating and event layouts. Ask about current capacity and setup options during your ocular inspection.</p>
+          <p>Bring your wedding vision to reality. Flexible event layouts available. Ask about current venue capacity and setup options during your ocular inspection.</p>
           <a href="#inquiry" class="btn btn-primary">Check Date Availability</a>
         </div>
       </div>
@@ -611,7 +651,7 @@
         </div>
         <div class="feature-content">
           <h2>Milestone Celebrations & Decor</h2>
-          <p>Our venue integrates adaptable stage options, floral backdrops, and dedicated spaces for custom styling accents. Ask about preferred suppliers and outside caterer/stylist options.</p>
+          <p>Our venue integrates adaptable stage options, floral backdrops, and dedicated spaces for custom styling accents. Ask about catering and styling options for your event.</p>
           <a href="#inquiry" class="btn btn-primary">Inquire About Event Packages</a>
         </div>
       </div>
@@ -667,7 +707,7 @@
       <div class="benefits-grid">
         <div class="benefit-card">
           <h3>Essential Power Backups</h3>
-          <p>Equipped with backup power capabilities to ensure continuous event operations.</p>
+          <p>Ask about available power and event support options during your booking inquiry.</p>
         </div>
         <div class="benefit-card">
           <h3>On-Site Parking</h3>
@@ -690,7 +730,7 @@
         </div>
         <div class="feature-content">
           <h2>On-Site Accommodations</h2>
-          <p>Extend your experience with integrated accommodation options. Overnight accommodation options are available. Ask about current room capacity and package inclusions during inquiry.</p>
+          <p>Extend your experience with integrated accommodation options. Overnight accommodation options available. Ask about current availability and capacity during inquiry.</p>
           <a href="#inquiry" class="btn btn-primary">View Lodging Inclusions</a>
         </div>
       </div>
@@ -706,7 +746,7 @@
         </div>
         <div class="feature-content">
           <h2>Food & Catering Experience</h2>
-          <p>Pair your celebration with flexible dining options. Our venue layouts accommodate full buffet stations and organized dining setups. Ask about preferred suppliers and outside caterer options.</p>
+          <p>Pair your celebration with flexible dining options. Our venue layouts accommodate full buffet stations and organized dining setups. Ask about available accommodation and event packages.</p>
           <a href="#inquiry" class="btn btn-primary">Request Menu Details</a>
         </div>
       </div>
@@ -714,28 +754,108 @@
   </section>
 
   <!-- 11. REVIEWS SECTION -->
-  <section class="reviews-section">
+  <section class="reviews-section" id="reviews">
     <div class="container">
-      <h2 class="section-title">Verified Reviews</h2>
+      <h2 class="section-title">Verified Google Reviews</h2>
       <p class="section-subtitle">Authentic feedback from hosts and guests at Teofely Gardens.</p>
       
+      <div class="reviews-summary">
+        <div class="rating-badge">
+          <span>4.8</span>
+          <span class="star-icon">★</span>
+          <span>16 Google Reviews</span>
+        </div>
+      </div>
+
       <div class="reviews-grid">
+        <!-- Review 1 -->
         <div class="review-card">
-          <div class="review-placeholder-box">
-            <div class="review-placeholder-title">REAL GOOGLE REVIEWS</div>
-            <div class="review-placeholder-text">Verified customer reviews will be integrated here.</div>
+          <div class="review-header">
+            <span class="review-author">Angela Padua</span>
+            <span class="review-source">Google Review</span>
+          </div>
+          <p class="review-text">"Spacious space for all types of event. Perfect for weddings. They also serve mouth watering foods. Surely will booked again for my next event."</p>
+          <div class="review-footer">
+            <span style="color: #d4af37;">★★★★★</span>
+            <span>a year ago</span>
           </div>
         </div>
+
+        <!-- Review 2 -->
         <div class="review-card">
-          <div class="review-placeholder-box">
-            <div class="review-placeholder-title">REAL GOOGLE REVIEWS</div>
-            <div class="review-placeholder-text">Verified customer reviews will be integrated here.</div>
+          <div class="review-header">
+            <span class="review-author">Mark Louie Cano</span>
+            <span class="review-source">Google Review</span>
+          </div>
+          <p class="review-text">"Good place for weddings and birthdays. Friendly service staff and nice scenery"</p>
+          <div class="review-footer">
+            <span style="color: #d4af37;">★★★★★</span>
+            <span>a year ago</span>
           </div>
         </div>
+
+        <!-- Review 3 -->
         <div class="review-card">
-          <div class="review-placeholder-box">
-            <div class="review-placeholder-title">REAL GOOGLE REVIEWS</div>
-            <div class="review-placeholder-text">Verified customer reviews will be integrated here.</div>
+          <div class="review-header">
+            <span class="review-author">Sarah Vicencio</span>
+            <span class="review-source">Google Review</span>
+          </div>
+          <p class="review-text">"It's a pretty place. The only downside is that it's right beside a church and the church's speakers are loud enough that it could kind of affect your own event."</p>
+          <div class="review-footer">
+            <span style="color: #d4af37;">★★★★★</span>
+            <span>2 years ago</span>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="review-author">garingo joriz</span>
+            <span class="review-source">Google Review</span>
+          </div>
+          <p class="review-text">"Perfect for wedding events. They also serve good food."</p>
+          <div class="review-footer">
+            <span style="color: #d4af37;">★★★★★</span>
+            <span>a year ago</span>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="review-author">Leonides Lacson</span>
+            <span class="review-source">Google Review</span>
+          </div>
+          <p class="review-text">"Very nice with parking areas, not too large and it's very clean."</p>
+          <div class="review-footer">
+            <span style="color: #d4af37;">★★★★★</span>
+            <span>a year ago</span>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="review-author">Leanne Nicolette Bucag</span>
+            <span class="review-source">Google Review</span>
+          </div>
+          <p class="review-text">"Top-notch quality and service."</p>
+          <div class="review-footer">
+            <span style="color: #d4af37;">★★★★★</span>
+            <span>a year ago</span>
+          </div>
+        </div>
+
+        <!-- Review 7 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="review-author">Jesi Karen</span>
+            <span class="review-source">Google Review</span>
+          </div>
+          <p class="review-text">"Great venue, but poor coordination."</p>
+          <div class="review-footer">
+            <span style="color: #d4af37;">★★★★★</span>
+            <span>3 years ago</span>
           </div>
         </div>
       </div>
@@ -749,7 +869,7 @@
       <p class="section-subtitle">Fill out the form below to check venue availability or schedule a personal walkthrough.</p>
       
       <div class="form-container">
-        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your ocular inquiry has been received.');">
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for your interest in Teofely Gardens. This demo form submission confirms layout responsiveness.');">
           <div class="form-group">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Full Name" required>
@@ -824,11 +944,11 @@
       
       <div class="faq-item">
         <h3>What is the capacity of the indoor pavilion?</h3>
-        <p>The pavilion offers flexible seating and event layouts. Ask about current capacity and setup options during your ocular inspection.</p>
+        <p>Flexible event layouts available. Ask about current venue capacity and setup options during your ocular inspection.</p>
       </div>
       <div class="faq-item">
         <h3>Are on-site accommodations available for guests?</h3>
-        <p>Overnight accommodation options are available. Ask about current room capacity and package inclusions during inquiry.</p>
+        <p>Overnight accommodation options available. Ask about current availability and capacity during inquiry.</p>
       </div>
       <div class="faq-item">
         <h3>Can we schedule a venue walkthrough before booking?</h3>
@@ -869,7 +989,7 @@
 
         <div style="background: rgba(255,255,255,0.05); padding: 1.25rem; border-radius: 8px; margin-bottom: 2rem; border-left: 4px solid var(--accent-color); text-align: left;">
           <p style="font-weight: 700; color: #ffffff; margin-bottom: 0.25rem;">7-Day Performance Commitment</p>
-          <p style="font-size: 0.95rem; color: #cbd5e0;">Complete build, asset integration, and testing covered under our direct launch commitment.</p>
+          <p style="font-size: 0.95rem; color: #cbd5e0;">Complete build, asset integration, and optimization testing covered under our direct launch commitment.</p>
         </div>
 
         <a href="#inquiry" class="btn btn-accent" style="width: 100%; max-width: 350px; font-size: 1.1rem; padding: 1rem;">APPROVE & START</a>
